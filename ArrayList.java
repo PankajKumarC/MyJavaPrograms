@@ -39,9 +39,10 @@ public class Main {
 		System.out.println("Enter the number of customers");
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
-        if(n == -1) 
-            System.out.println("Invalid Input");
-        else {
+        	if(n == -1) 
+            		System.out.println("Invalid Input");
+		
+        	else {
 			ArrayList<Customer> ar = new ArrayList<Customer>(n);
 			
 			for(int i=1; i<=n; i++) {
