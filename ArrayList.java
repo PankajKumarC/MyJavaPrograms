@@ -1,8 +1,8 @@
-  import java.util.*;
+    import java.util.*;
 	
 	class Customer {
 	    
-	    public String firstName;
+		public String firstName;
 	    public String lastName;
 	    public String email;
 	    public String address;
@@ -31,7 +31,7 @@
 	    public String getmobileNumber() {
 	    	return this.mobileNumber;
 	    }
- }	    
+	}	    
 	public class Main {
 		public static void main(String[] args) {
 			
@@ -41,7 +41,7 @@
 			n = sc.nextInt();
             if(n == -1) 
                 System.out.println("Invalid Input");
-          else {
+            else {
     			ArrayList<Customer> ar = new ArrayList<Customer>(n);
     			
     			for(int i=1; i<=n; i++) {
@@ -59,7 +59,8 @@
     				
     				Customer temp = new Customer(fName,lName,email,add,mob);
     				ar.add(temp);
-    			 }
+    			}
+    			
     			sc.close();
     			
     			Iterator<Customer> itr = ar.iterator();
@@ -70,7 +71,6 @@
     				System.out.format("%-20s %-20s %-20s %-30s %-20s",c.getfirstName(),c.getlastName(),c.getemail(),c.getaddress(),c.getmobileNumber());
     				System.out.println();
     			}
-        }
-    			
+            }		
     	}
     }
